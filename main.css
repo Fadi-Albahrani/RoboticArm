@@ -63,9 +63,7 @@
     cursor: pointer;
   }
 
-  #onOffButton{
-    margin-left: 10px;
-  }
+
 
   .output {
       align-self: center;
@@ -77,4 +75,18 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+  }
+
+  .offOnButton {
+    background-color: skyblue;
+    margin-top: 30px;
+    width: 40px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
   }
