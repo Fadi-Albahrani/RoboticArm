@@ -13,8 +13,15 @@ function onOff (){
 
 }
 
+/*
+
+to do list 
+
+change off on to the DB
+
+show changes on seperate PHP file 
+
+*/
 
 
 
-
-// console.log(button.value);
