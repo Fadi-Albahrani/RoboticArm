@@ -3,25 +3,24 @@
 <html>
 
 <head>
+    <!-- <link rel="stylesheet" href="main.css" /> -->
     <link rel="stylesheet" href="main.css" />
 </head>
 
 <body>
 
-    
-
     <div class="content">
 
-      
-            <img class="img" src="logo.png" alt="logo">
-        
 
-       <form class="grid-container" action="script.php" method="get">
+        <img class="img" src="logo.png" alt="logo">
 
-        <!-- <div class="grid-container"> -->
+
+        <form class="grid-container" action="script.php" method="get">
+
+            <!-- <div class="grid-container"> -->
 
             <h3>Motor 1 </h3>
-            <input type="range" min="0" max="180" value="90" class="slider" id="myRange1" 
+            <input type="range" min="0" max="180" value="90" class="slider" id="myRange1"
                 oninput="this.nextElementSibling.value = this.value" name="motor1">
             <output class="output">0</output>
             <h3>Motor 2 </h3>
@@ -46,22 +45,16 @@
             <output class="output">0</output>
 
             <input type="submit" class="button" id="saveButton" value="save" name="saveButton">
+            <input type="button" class="button" id="onOffButton" value="off" name="onOffButton" onclick="onOff();">
 
-        <!-- </div> -->
+            <!-- </div> -->
 
-       </form>
-
-        <!-- <button  class="button"> Save </button>
-        <button id="onOffButton" class="button"> On </button> -->
-
-        <!-- <form action="script.php" method="GET">
-            <input type="submit" class="button" id="onOffButton" value="onn" name="onOffButton">
-           
-        </form> -->
+        </form>
 
     </div>
 
-  
+
+    <script src="mainScript.js"></script>
 
 </body>
 
