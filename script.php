@@ -41,23 +41,14 @@ function save($conn)
   $motor6 =  $_GET['motor6'];
   $onOff = $_GET['onOffButton'];
 
-  $operateValue = 0;
-
-  if ($onOff == "on") {
-    $operateValue = 1;
-  } else if ($onOff == "off") {
-    $operateValue = 0;
-  }
-
-
   mysqli_query($conn, "UPDATE motors SET degree= $motor1  WHERE id=1", 0);
   mysqli_query($conn, "UPDATE motors SET degree= $motor2  WHERE id=2", 0);
   mysqli_query($conn, "UPDATE motors SET degree= $motor3  WHERE id=3", 0);
   mysqli_query($conn, "UPDATE motors SET degree= $motor4  WHERE id=4", 0);
   mysqli_query($conn, "UPDATE motors SET degree= $motor5  WHERE id=5", 0);
   mysqli_query($conn, "UPDATE motors SET degree= $motor6  WHERE id=6", 0);
-  mysqli_query($conn, "UPDATE motors SET statuss = $operateValue", 0);
+  mysqli_query($conn, "UPDATE motors SET statuss ='$onOff' ",0);
 
- echo "PHP code excuted please check the database or the included php file to see the changes";
-
+ echo "PHP code excuted please check the database or dbOverview.php file to see the changes";
+  
 }

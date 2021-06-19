@@ -1,4 +1,6 @@
-document.getElementById('onOffButton').style.backgroundColor = "red";
+var button = document.getElementById('onOffButton');
+button.style.backgroundColor = "skyblue";
+
 
 function onOff (){
     var button = document.getElementById('onOffButton');
@@ -11,6 +13,10 @@ function onOff (){
     }
 
 }
+
+
+
+
 
 /*
 
